@@ -14,10 +14,11 @@ Scenario Outline: Register and Login
 	Then Assert for presence of Sign Out 
 	
 	Examples: 
+		#Change Registration Details for every time running the code
 		| userId | password | firstName | lastName | email | phone | addressOne | addressTwo | city | state | zip | country |
-		| 1234567aba | qwertyuiop |Ramu|Ragam|aasdfghjkl@gmail.com|9876543210|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
-		| 1234567baa | asdfghjkl |Krishna|katugga|aasdfghjkl@gmail.com|9876543211|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
-		| 1234567caa | zxcvbnmasd |RajShekhar|Borra|aasdfghjkl@gmail.com|9876543212|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
+		| 1234567abac | qwertyuiop |Ramu|Ragam|aasdfghjkl@gmail.com|9876543210|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
+		| 1234567baac | asdfghjkl |Krishna|katugga|aasdfghjkl@gmail.com|9876543211|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
+		| 1234567caac | zxcvbnmasd |RajShekhar|Borra|aasdfghjkl@gmail.com|9876543212|Chinna gari colony|Kotha Peta|Kaikalur|AP|521333|India| 
 Scenario: Valid Search 
 	When User Search for "Fish" and click on search 
 	Then Assert for presence of GoldFish and close browser 
